@@ -1,25 +1,28 @@
 .modal {
     background: #000000;
     border: 2px solid #77B900;
-    box-sizing: border-box;
     box-shadow: 0px 0px 20px rgba(119, 185, 0, 0.5);
     width: 100%;
-    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 
     @media (min-width: $mediaWidthTablet) {
         width: 540px;
         height: 410px;
+        padding-bottom: 50px;
     }
 }
 .modal-dialog {
     position: relative;
-
 }
 .modal-header {
     border-bottom: none;
 }
 .modal-footer {
     border-top: none;
+    padding-top: 8px;
 }
 .modal-content {
     background: transparent;
@@ -65,6 +68,12 @@
     height: 56px;
     background: #77B900;
     color: #fff;
+    font-weight: 700;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.25px;
     border-radius: 0;
     display: block;
     margin: 0 auto;
@@ -82,3 +91,9 @@
     top: -30px;
     right: 0;
 }
+// .modal-buy {
+//     position: absolute;
+//     left: 80%;
+//     top: 80%;
+//     transform: translate(-50%,-50%);
+// }

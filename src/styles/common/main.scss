@@ -2,8 +2,9 @@
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../../img/bg-small.png);
 
     @media (min-width: $mediaWidthTablet) {
-        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../../img/bg-large.png);
-        background-position: center right;
+        height: 851px;
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.1) 100%), url(../../img/bg-large.png);
+        background-position: center;
         background-repeat: no-repeat;
     }
 }

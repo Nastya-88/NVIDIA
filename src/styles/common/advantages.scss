@@ -1,5 +1,10 @@
 .advantages {
     padding-bottom: 62px;
+
+    @media (min-width: $mediaWidthLaptop) {
+        width: 1110px;
+        padding: 0;
+    }
 }
 .advantages__cards {
     display: flex;
@@ -9,6 +14,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin-bottom: 50px;
+        justify-content: center;
     }
 }
 .advantages__card {
@@ -27,12 +33,24 @@
         background: transparent;
         flex: 30%;
         margin-right: 30px;
+        max-width: 255px;
     }
     @media (min-width: $mediaWidthLaptop) {
         flex: 25%;
         max-width: 255px;
     }
     
+}
+.advantages__image-block {
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.advantages__image-block svg #hdr, #input, #rate, #wide {
+    
+    &:hover {
+        fill: rgba(119, 185, 0, 0.25);
+        stroke: #77B900!important;
+    }
 }
 .advantages__image {
     width: 151px;
@@ -45,7 +63,7 @@
    font-weight: 700;
    font-size: 26px;
    line-height: 36px;
-   margin-top: 60px;
+   margin-top: 57px;
    margin-bottom: 20px;
    letter-spacing: 0.25px;
 }
@@ -85,6 +103,10 @@
         line-height: 36px;
         text-align: center;
         letter-spacing: 0.25px;
+
+        @media (min-width: $mediaWidthTablet) {
+            text-align: left;
+        }
     }
 }
 .card-body {
@@ -104,6 +126,12 @@
     height: 56px;
     background: #77B900;
     color: #fff;
+    font-weight: 700;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.25px;
     border-radius: 0;
     display: block;
     margin: 0 auto;

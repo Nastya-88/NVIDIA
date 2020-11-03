@@ -1,11 +1,13 @@
 .social {
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 200px;
+    margin-bottom: 55px;
     display: flex;
     justify-content: center;
 
     @media (min-width: $mediaWidthTablet) {
         margin: 0;
+        justify-content: flex-end;
     }
 }
 .social__link svg:hover #twitter,
@@ -13,6 +15,6 @@
  {
     fill: #77B900;
 }
-.social__link {
+.social__link:not(:last-child) {
     margin-right: 33px;
 }
