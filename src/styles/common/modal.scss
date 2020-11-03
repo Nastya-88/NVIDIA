@@ -1,0 +1,84 @@
+.modal {
+    background: #000000;
+    border: 2px solid #77B900;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(119, 185, 0, 0.5);
+    width: 100%;
+    
+
+    @media (min-width: $mediaWidthTablet) {
+        width: 540px;
+        height: 410px;
+    }
+}
+.modal-dialog {
+    position: relative;
+
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-footer {
+    border-top: none;
+}
+.modal-content {
+    background: transparent;
+}
+.modal-title {
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #fff;
+    margin: 0 auto;
+}
+.modal-body {
+    width: 90%;
+    margin: 0 auto;
+
+    @media (min-width: $mediaWidthTablet) {
+        max-width: 350px;
+    }
+}
+.form-control {
+    width: 100%;
+    padding: 14px 0px 14px 20px;
+    height: 56px;
+    background: #FFFFFF;
+
+    @media (min-width: $mediaWidthTablet) {
+        max-width: 350px;
+    }
+}
+.modal__close {
+    font-size: 32px;
+    color: #fff;
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.modal__btn {
+    width: 192px;
+    height: 56px;
+    background: #77B900;
+    color: #fff;
+    border-radius: 0;
+    display: block;
+    margin: 0 auto;
+
+    &:hover {
+        background: #000000;
+        border: 2px solid #77B900;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px #77B900;
+        color: #fff;
+    }
+}
+.modal .close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+}

@@ -1,0 +1,18 @@
+.social {
+    margin: 0 auto;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $mediaWidthTablet) {
+        margin: 0;
+    }
+}
+.social__link svg:hover #twitter,
+.social__link svg:hover #instagram
+ {
+    fill: #77B900;
+}
+.social__link {
+    margin-right: 33px;
+}

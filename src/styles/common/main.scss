@@ -1,0 +1,9 @@
+.main {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../../img/bg-small.png);
+
+    @media (min-width: $mediaWidthTablet) {
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../../img/bg-large.png);
+        background-position: center right;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,33 @@
+@import "../../local_modules/normalize.css/normalize";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    // background: url(../../img/bg-small.png) no-repeat;
+    // background-size: cover;
+    // background-position: center center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+.fixed-page{
+    overflow: hidden; 
+}

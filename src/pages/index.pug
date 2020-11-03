@@ -1,0 +1,49 @@
+extends common/layout
+
+block content
+  main.main
+    section.container.advantages
+      h2.advantages__title ПРЕИМУЩЕСТВА G-SYNC
+      h5.advantages__subtitle Каждый монитор с технологией G-SYNC проходит серьезное тестирование и контроль качества для обеспечения максимальной производительности. Сотни мониторов проходят контроль качества, но только прошедшие все тесты получают сертификацию G-SYNC.
+      .advantages__cards
+        .card.advantages__card
+          img.card-img-top.advantages__image(src="/../../img/hdr-small.svg", alt="hdr")
+          .card-body
+            h5.card-title.advantages__card-title--green HDR
+              span.advantages__card-title  DISPLAY
+            p.card-text.advantages__text Получите более широкий и комфортный для восприятия диапазон цветовой гаммы, чем в обычных мониторах.
+        .card.advantages__card
+          img.card-img-top.advantages__image(src="/../../img/input-small.svg", alt="INPUT LAG")
+          .card-body
+            h5.card-title.advantages__card-title--green  INPUT 
+              span.advantages__card-title  LAG
+            p.card-text.advantages__text Мониторы с технологией G-SYNC обеспечивают минимальную задержку между нажатием клавиш и результатом на экране, что очень важно для геймеров.
+        .card.advantages__card
+          img.card-img-top.advantages__image(src="/../../img/refresh-small.svg", alt="HIGH REFRESH RATE")
+          .card-body
+            h5.card-title.advantages__card-title--green HIGH REFRESH
+              span.advantages__card-title  RATE
+            p.card-text.advantages__text NVIDIA тесно сотрудничает с производителями мониторов, чтобы вывести на рынок широкий спектр дисплеев с высокой частотой обновления экрана от 75 до 360 Гц. 
+        .card.advantages__card
+          img.card-img-top.advantages__image(src="/../../img/wide-small.svg", alt="WIDE COLOR GAMUT")
+          .card-body
+            h5.card-title.advantages__card-title--green WIDE COLOR
+              span.advantages__card-title  GAMUT
+            p.card-text.advantages__text Современные мониторы G-SYNC ULTIMATE поддерживают цветовой охват DCI-P3, обеспечивая более реалистичную цветопередачу с плавными переходами.
+      button.btn.advantages__btn(type="button" data-toggle="modal" data-target="#exampleModal") КУПИТЬ
+      //- Modal
+      .modal.fade#exampleModal(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+        .modal-dialog.modal-dialog-centered
+          .modal-content
+            .modal-header
+              h5#exampleModalLabel.modal-title ПРЕИМУЩЕСТВА G-SYNC
+              button.close(type="button" data-dismiss="modal" aria-label="Close")
+                span.modal__close(aria-hidden="true") &times;
+            .modal-body
+              form
+                .form-group
+                  input.form-control(type="text" placeholder="Имя")
+                .form-group
+                  input.form-control(type="text" placeholder="Mail")
+            .modal-footer
+              button.btn.modal__btn(type="button") КУПИТЬ
