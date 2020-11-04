@@ -29,13 +29,6 @@
     background: #000 url(../../img/menu-small.png) no-repeat;
     background-position: center center;
     background-size: 25px;
-
-    &:active,
-    &:focus {
-        background: #77B900 url(../../img/menu-small.png) no-repeat;
-        background-position: center center;
-        background-size: 25px;
-    }
 }
 .navbar-brand {
     margin-right: 38px;
